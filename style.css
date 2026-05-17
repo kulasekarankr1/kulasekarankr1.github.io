@@ -854,6 +854,100 @@ section { padding: 100px 6%; }
     box-shadow: 0 15px 35px rgba(0, 229, 160, 0.07);
 }
 
+/* Skill Categories */
+.skills-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-category {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 25px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 229, 160, 0.08);
+}
+
+.skill-category h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-white);
+}
+
+.skill-category h4 i { color: var(--accent); }
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background: rgba(0, 229, 160, 0.08);
+    color: var(--accent);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid rgba(0, 229, 160, 0.15);
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: rgba(0, 229, 160, 0.15);
+    border-color: rgba(0, 229, 160, 0.3);
+}
+
+/* Skill Bars */
+.skill-bar-item {
+    margin-bottom: 16px;
+}
+
+.skill-bar-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-size: 13px;
+}
+
+.skill-bar-info span:first-child {
+    color: var(--text-white);
+    font-weight: 500;
+}
+
+.skill-bar-info span:last-child {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.skill-bar-track {
+    width: 100%;
+    height: 6px;
+    background: var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-secondary));
+    border-radius: 10px;
+    transition: width 0.6s ease;
+}
+
 /* ==================== CERTIFICATIONS ==================== */
 .cert-grid {
     display: grid;
